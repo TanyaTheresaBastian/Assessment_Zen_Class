@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    
+</head>
+
+<body>
+
+    <table style="margin-left:auto;margin-right:auto;">
+        <form onsubmit="sendData()">
+            <tr>
+                <td style="width:60%"> Full Name</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="text" placeholder="Your name" required id="name">
+                        <i class="fa fa-user fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="width:60%"> Address Line 1</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="text" placeholder="Address Line 1" id="address_line_1" required>
+                        <i class="fa fa-address-book fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+            
+            <tr>
+                <td style="width:60%">Address Line 2</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="text" placeholder="Address Line 2" id="address_line_2" required>
+                        <i class="fa fa-address-book fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%">City</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="text" placeholder="City" id="city" required>
+                        <i class="fa fa-building fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%">State/Province/Region</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="text" placeholder="City" id="state" required>
+                        <i class="fa fa-map-marker fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%">Postal Code/Zip</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="number" placeholder="Postal Code/Zip" id="zip" required>
+                        <i class="fa fa-envelope-open fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%">Country</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="text" list="countries" placeholder="Afghanisthan" required>
+                        <datalist id="countries">
+                            <option value="Afghanisthan" />
+                            <option value="India" />
+                            <option value="United States" />
+                        </datalist>
+                        <i class="fa fa-map fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%">Email</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="email" placeholder="Email" id="email" required>
+                        <i class="fa fa-user fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%">Phone Number</td>
+                <td style="width:40%">
+                    <div class="inputWithIcon inputIconBg">
+                        <input type="number" placeholder="Phone Number" id="phone_number" required>
+                        <i class="fa fa-user fa-lg fa-fw"></i>
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="width:60%; text-align: right;">
+                    <button>Submit</button>
+                </td>
+            </tr>
+        </form>
+        <script>
+            function sendData() {
+                alert('Thank You.....!!!')
+            }
+        </script>
+    </table>
+</body>
+
+</html>
